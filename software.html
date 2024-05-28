@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KoboToolbox</title>
+    <link rel="icon" href="/image/5543677.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+          <div class="header-nav__logo">
+            <a href="/index.html">
+            <img src="/image/kobotoolbox-removebg-preview (1).png" alt="logo">
+            </a>
+          </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active underline" aria-current="page" href="aboutUs.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/feature.html">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="help.html">HELP</a>
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn btn-outline-primary">Sign up</button>
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn btn-primary">Donate</button>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="wrapper">
+    <!-- Sticky sidebar -->
+    <div class="sticky-sidebar">
+      <a href="#software">
+        <h4>ABOUT THE <br>SOFTWARE</h4>
+      </a>
+      <br>
+      <a href="#kobo">
+        <h4>WHY <br>KOBOTOOLBOX</h4>
+      </a>
+    </div>
+    <!-- Content Section -->
+    <img src="" alt="" id="software">
+    <section class="main-content">
+        <h1>The KoboToolbox software</h1>
+        <p>
+            KoboToolbox is an open source platform for collecting, managing, and visualizing data. 
+            As the most widely used data collection tool in the nonprofit sector, it is the tool of choice for over 14,000 social impact organizations worldwide.
+        </p>
+        <p>
+            In virtually every country around the world, KoboToolbox is used by organizations in humanitarian action, global development, environmental protection, 
+            peacebuilding, and human rights, as well as by public health institutes, research organizations, and education facilities. 
+            Our users collect more than 20 million surveys a month, empowering them to generate insights that drive positive change globally.
+        </p>
+        <p id="kobo">
+            We continuously strive to improve KoboToolbox based on the feedback of our users. Through development with partner organizations, 
+            new features are added every year to respond to data needs in the field. Read more about <a href="">our feature development services and partnerships.</a> 
+        </p>
+        <h1>Why KoboToolbox</h1>
+        <p>
+            Here are some of the reasons why organizations choose KoboToolbox:
+        </p>
+        <p>
+           <ul class="bulleted-list">
+            <li>
+                KoboToolbox is accessible and intuitive to use, so organizations can collect high quality data without devoting resources to technical training.
+            </li>
+            <li>
+                Our tools were built specifically for the unique needs of collecting data in challenging settings, such as humanitarian crises and conflict-affected countries.
+            </li>
+            <li>
+                KoboToolbox was designed for offline use and for inexpensive mobile devices—while still providing advanced functionalities for data management and visualization.
+            </li>
+            <li>
+                Our tools are free for nonprofit organizations to create an unlimited number of surveys and collect quality data.
+            </li>
+            <li>
+                Individual user and organization-level support, advanced services, and customizations are available as plan upgrades.
+            </li>
+            <li>
+                KoboToolbox was built to be compatible with the XLSForm standard and ODK XForms, making it easy to migrate between different platforms.
+            </li>
+            <li>
+                Our tools are multilingual, and survey forms can be translated into hundreds of languages making it easy to work with global teams.
+            </li>
+           </ul>
+        </p>
+            <a href="">Learn more about KoboToolbox feartures.</a>
+    </section>
+</div>
+<script>
+// JavaScript to handle scrolling to headings
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all the h4 tags in the sidebar
+  var h4Tags = document.querySelectorAll('.sticky-sidebar h4 a');
+
+  // Add click event listener to each h4 tag
+  h4Tags.forEach(function(tag) {
+    tag.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default link behavior
+      var targetId = this.getAttribute('href').slice(1); // Get the target ID from the href attribute
+      var targetElement = document.getElementById(targetId); // Find the target element by ID
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target element
+      }
+    });
+  });
+});
+</script>
+<!-- ////////////////////////////////////// -->
+<!-- footer for all page -->
+<footer class="bg-dark text-white py-3">
+  <div class="container">
+    <div class="row footer-all-white-text">
+      <div class="col-md-2 mb-3">
+        <h5>ORGANIZATION</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Financials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h5>SOFTWARE</h5>
+        <ul>
+          <li><a href="#">Online learning</a></li>
+          <li><a href="#">About KoboToolbox</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Private servers</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h5>COMMUNITY</h5>
+        <ul>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h3>Stay Up<br> to Date</h3>
+        <p>Subscribe to our KoboToolbox Updates newsletter to be the first to learn about new features, resources, and user impact stories from around the world.</p>
+        <form>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Enter your email*" aria-label="Enter your email*" aria-describedby="button-addon2">
+          </div>
+          <button class="btn btn-primary" type="button" id="button-addon2">Sumbit</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <div class="row justify-content-center">
+          <div class="col-md-2">
+            <a href="https://www.facebook.com/kobotoolbox" target="_blank" class="me-3">
+              <img src="/image/facebook-icon.png" alt=""class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fkobotoolbox" target="_blank" class="me-3">
+              <img src="/image/twitter-x-icon.png" alt=""class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a href="https://www.linkedin.com/company/kobotoolbox" target="_blank" class="me-3">
+              <img src="/image/in-icon.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a href="https://github.com/kobotoolbox" target="_blank">
+              <img src="/image/github-icon.png" alt=""class="img-fluid">
+            </a>
+          </div>
+          <div class="text-center" style="margin-top: 60px;">
+            <a href="">Terms of Service</a>
+            <span class="divider"></span>
+            <a href="#">Privacy</a>
+            <a href="">Cookie Preferences</a>
+        </div>
+        </div>
+      </div>
+      <div>Website content is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC-BY-NC license,</a> unless noted otherwise</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
